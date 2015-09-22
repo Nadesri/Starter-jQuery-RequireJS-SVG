@@ -1,0 +1,16 @@
+svg {
+  width: 100px;
+  height: 200px;
+}
+
+g,rect {
+  width: 100%;
+  height: 100%;
+}
+
+rect.btn {
+  stroke:#fff;
+  fill:#00f;
+  fill-opacity:1;
+  stroke-opacity:1;
+}
