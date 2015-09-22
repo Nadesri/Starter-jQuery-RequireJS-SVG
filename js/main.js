@@ -2,7 +2,8 @@ requirejs.config({
   baseUrl: 'js/lib',
   paths: {
     app: '../app',
-    jquery: 'jquery-2.1.4'
+    jquery: 'jquery-2.1.4',
+    bootstrap: 'bootstrap' // Optional: change to bootstrap.min
   }
 });
         
