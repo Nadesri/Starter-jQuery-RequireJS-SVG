@@ -8,25 +8,47 @@
  </head>
 
   <body>
-    <h1>
-      A Starter Project for RequireJS/jQuery/SVG
-    </h1>
-    <p class="lead">
+    <div class="container">
+      <h1>
+        A Starter Project for RequireJS/jQuery/SVG
+      </h1>
+      <p class="lead">
       This is a project utilizing RequireJS/jQuery/SVG (and some Bootstrap for
       front-end prettiness). It can be easily used as a starter project using
       these tools. This project is also used as a running collection of items
       focusing on these tools.
-    </p>
-    <h2>
-      1. Clickable SVG Rectangles with jQuery.onclick()
-    </h2>
-    <div>
-      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-        <g>
-          <rect id="clickableRect" class="btn" x="0" y="0"/>
-        </g>
-      </svg>
+      </p>
+      <h2>
+        1. Clickable statically created SVG Elements 
+      </h2>
+      <p> 
+        Statically created SVG elements can be accessed by ID and can respond
+        to click events fairly simply: 
+      </p>
+      <div class="clearfix">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="float:
+        left;">
+            <rect id="clickableRect" class="btn" x="0" y="0"/>
+        </svg>
+        <span> &lt;-- Click this rect! </span>
+      </div>
+      <div>
+      <h2> 2. Clickable dynamically-crated SVG via jQuery </h2>
+      <p> 
+      Typically, SVG objects are not accessible via jQuery. This is because SVG
+      elements cannot be parsed by innerHTML. bobince from Stack Overflow
+      provides a 
+      <a href="http://stackoverflow.com/questions/3642035/jquerys-append-not-working-with-svg-element">wonderful explanation</a>, including JavaScript logic 
+      to create SVG elements using document.createElementNS. 
+      </p>
+      <button id="dynamicClickBtn" class="btn btn-primary">
+        Click me to create a fun SVG circle!
+      </button>
+      <div class="center-block panel">
+        <svg id="dynamicClickSVG" viewBox="0 0 10 10">
+        </svg>
+      </div>
     </div>
-  </body>
+ </body>
 
 </html>
