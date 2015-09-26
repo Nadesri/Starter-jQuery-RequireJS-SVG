@@ -1,2 +1,5 @@
 # Temporary files
 *.swp
+
+# Mac-specific files
+*.DS_Store
