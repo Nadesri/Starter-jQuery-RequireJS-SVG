@@ -32,7 +32,7 @@ define(["jquery"], function($) {
   }
 
   function animatedCircleHandler(event) {
-    alert("jQuery was used to create this circle, which listened to the" +
+    alert("jQuery was used to create this circle, which listened to the " +
         "click event you just triggered!");
   }
 
